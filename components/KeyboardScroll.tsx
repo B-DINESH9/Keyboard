@@ -11,10 +11,11 @@ import {
 
 const TOTAL_FRAMES = 120;
 const FOG_BG_COLOR = "#BBBEC1";
+const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
 function getFramePath(index: number): string {
   const clamped = Math.max(0, Math.min(TOTAL_FRAMES - 1, index));
-  return `/frames/frame_${clamped}_delay-0.04s.webp`;
+  return `${BASE_PATH}/frames/frame_${clamped}_delay-0.04s.webp`;
 }
 
 export default function KeyboardScroll() {
