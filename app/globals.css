@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --dinesh-fog: #BBBEC1;
+  --dinesh-ink: rgba(0, 0, 0, 0.9);
+  --dinesh-muted: rgba(0, 0, 0, 0.6);
+}
+
+html {
+  background-color: #BBBEC1;
+  color: rgba(0, 0, 0, 0.9);
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Inter", "Segoe UI", Roboto, sans-serif;
+  scroll-behavior: smooth;
+  overscroll-behavior-y: none;
+}
+
+body {
+  background-color: #BBBEC1;
+  color: rgba(0, 0, 0, 0.9);
+  margin: 0;
+  padding: 0;
+  overflow-x: clip;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Subtle custom scrollbar matching editorial fog theme */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #BBBEC1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.18);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.3);
+}
